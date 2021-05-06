@@ -1,0 +1,40 @@
+libpmem: (g=0): rw=randread, bs=(R) 128KiB-128KiB, (W) 128KiB-128KiB, (T) 128KiB-128KiB, ioengine=libpmem, iodepth=1
+...
+fio-3.20
+Starting 8 threads
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+
+libpmem: (groupid=0, jobs=8): err= 0: pid=41456: Fri Mar  5 04:16:05 2021
+  read: IOPS=265k, BW=32.3GiB/s (34.7GB/s)(9704GiB/300001msec)
+    clat (usec): min=3, max=1115, avg=29.70, stdev= 1.39
+     lat (usec): min=3, max=1116, avg=29.72, stdev= 1.39
+    clat percentiles (nsec):
+     |  1.00th=[27264],  5.00th=[28032], 10.00th=[28288], 20.00th=[28544],
+     | 30.00th=[29056], 40.00th=[29312], 50.00th=[29568], 60.00th=[29824],
+     | 70.00th=[30080], 80.00th=[30592], 90.00th=[31360], 95.00th=[31872],
+     | 99.00th=[33536], 99.50th=[34048], 99.90th=[36608], 99.95th=[39168],
+     | 99.99th=[63744]
+   bw (  MiB/s): min=26717, max=33242, per=100.00%, avg=33171.72, stdev=33.14, samples=4792
+   iops        : min=213737, max=265940, avg=265373.75, stdev=265.13, samples=4792
+  lat (usec)   : 4=0.01%, 20=0.01%, 50=99.98%, 100=0.02%, 250=0.01%
+  lat (usec)   : 750=0.01%, 1000=0.01%
+  lat (msec)   : 2=0.01%
+  cpu          : usr=99.85%, sys=0.01%, ctx=709, majf=0, minf=16640
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=79491298,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=32.3GiB/s (34.7GB/s), 32.3GiB/s-32.3GiB/s (34.7GB/s-34.7GB/s), io=9704GiB (10.4TB), run=300001-300001msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%

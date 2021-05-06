@@ -1,0 +1,36 @@
+libpmem: (g=0): rw=write, bs=(R) 128KiB-128KiB, (W) 128KiB-128KiB, (T) 128KiB-128KiB, ioengine=libpmem, iodepth=1
+...
+fio-3.20
+Starting 6 threads
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+
+libpmem: (groupid=0, jobs=6): err= 0: pid=39789: Fri Mar  5 02:23:35 2021
+  write: IOPS=54.7k, BW=6837MiB/s (7169MB/s)(2003GiB/300001msec); 0 zone resets
+    clat (usec): min=72, max=534, avg=107.76, stdev=11.04
+     lat (usec): min=72, max=535, avg=108.41, stdev=11.04
+    clat percentiles (usec):
+     |  1.00th=[   88],  5.00th=[   92], 10.00th=[   95], 20.00th=[   98],
+     | 30.00th=[  101], 40.00th=[  104], 50.00th=[  108], 60.00th=[  110],
+     | 70.00th=[  113], 80.00th=[  117], 90.00th=[  123], 95.00th=[  128],
+     | 99.00th=[  139], 99.50th=[  143], 99.90th=[  153], 99.95th=[  157],
+     | 99.99th=[  167]
+   bw (  MiB/s): min= 6584, max= 6927, per=100.00%, avg=6845.68, stdev= 8.18, samples=3594
+   iops        : min=52676, max=55422, avg=54765.43, stdev=65.40, samples=3594
+  lat (usec)   : 100=25.72%, 250=74.28%, 500=0.01%, 750=0.01%
+  cpu          : usr=99.91%, sys=0.01%, ctx=509, majf=0, minf=12289
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,16408672,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=6837MiB/s (7169MB/s), 6837MiB/s-6837MiB/s (7169MB/s-7169MB/s), io=2003GiB (2151GB), run=300001-300001msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%

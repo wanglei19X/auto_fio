@@ -1,0 +1,42 @@
+libpmem: (g=0): rw=rw, bs=(R) 128KiB-128KiB, (W) 128KiB-128KiB, (T) 128KiB-128KiB, ioengine=libpmem, iodepth=1
+fio-3.20
+Starting 1 thread
+libpmem: Laying out IO file (1 file / 4096MiB)
+
+libpmem: (groupid=0, jobs=1): err= 0: pid=44223: Fri Mar  5 07:28:54 2021
+  read: IOPS=9528, BW=1191MiB/s (1249MB/s)(349GiB/300001msec)
+    clat (nsec): min=23904, max=68412, avg=26025.68, stdev=564.06
+     lat (nsec): min=23923, max=68443, avg=26046.14, stdev=564.39
+    clat percentiles (nsec):
+     |  1.00th=[24960],  5.00th=[25472], 10.00th=[25472], 20.00th=[25728],
+     | 30.00th=[25728], 40.00th=[25984], 50.00th=[25984], 60.00th=[25984],
+     | 70.00th=[26240], 80.00th=[26240], 90.00th=[26496], 95.00th=[26752],
+     | 99.00th=[28288], 99.50th=[28544], 99.90th=[30336], 99.95th=[31360],
+     | 99.99th=[36096]
+   bw (  MiB/s): min= 1116, max= 1251, per=100.00%, avg=1192.53, stdev=20.38, samples=599
+   iops        : min= 8932, max=10014, avg=9540.24, stdev=163.07, samples=599
+  write: IOPS=9523, BW=1190MiB/s (1248MB/s)(349GiB/300001msec); 0 zone resets
+    clat (usec): min=64, max=128, avg=77.00, stdev= 2.98
+     lat (usec): min=65, max=128, avg=77.61, stdev= 2.98
+    clat percentiles (usec):
+     |  1.00th=[   72],  5.00th=[   73], 10.00th=[   74], 20.00th=[   75],
+     | 30.00th=[   76], 40.00th=[   77], 50.00th=[   78], 60.00th=[   78],
+     | 70.00th=[   79], 80.00th=[   80], 90.00th=[   81], 95.00th=[   82],
+     | 99.00th=[   85], 99.50th=[   86], 99.90th=[  101], 99.95th=[  104],
+     | 99.99th=[  108]
+   bw (  MiB/s): min= 1133, max= 1212, per=100.00%, avg=1191.93, stdev=10.34, samples=599
+   iops        : min= 9064, max= 9698, avg=9535.46, stdev=82.72, samples=599
+  lat (usec)   : 50=50.01%, 100=49.93%, 250=0.06%
+  cpu          : usr=99.88%, sys=0.01%, ctx=203, majf=0, minf=2898
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2858471,2857004,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=1191MiB/s (1249MB/s), 1191MiB/s-1191MiB/s (1249MB/s-1249MB/s), io=349GiB (375GB), run=300001-300001msec
+  WRITE: bw=1190MiB/s (1248MB/s), 1190MiB/s-1190MiB/s (1248MB/s-1248MB/s), io=349GiB (374GB), run=300001-300001msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%

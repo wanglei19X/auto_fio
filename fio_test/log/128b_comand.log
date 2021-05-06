@@ -1,0 +1,16 @@
+Wed Mar 10 13:08:34 2021: taskset -c 1-1 fio test.txt >/home/wanglei/fio_test/log/128b_seq_read_1job_QD1.log
+
+Wed Mar 10 13:13:41 2021: taskset -c 1-10 fio test.txt >/home/wanglei/fio_test/log/128b_seq_read_10job_QD1.log
+
+Wed Mar 10 13:14:45 2021: taskset -c 1-1 fio test.txt >/home/wanglei/fio_test/log/128b_seq_write_1job_QD1.log
+
+Wed Mar 10 13:19:44 2021: taskset -c 1-10 fio test.txt >/home/wanglei/fio_test/log/128b_seq_write_10job_QD1.log
+
+Wed Mar 10 14:09:14 2021: taskset -c 1-1 fio test.txt >/home/wanglei/fio_test/log/128b_seq_read_1job_QD1.log
+
+Wed Mar 10 14:16:44 2021: taskset -c 1-10 fio test.txt >/home/wanglei/fio_test/log/128b_seq_read_10job_QD1.log
+
+Wed Mar 10 14:17:48 2021: taskset -c 1-1 fio test.txt >/home/wanglei/fio_test/log/128b_seq_write_1job_QD1.log
+
+Wed Mar 10 14:25:18 2021: taskset -c 1-10 fio test.txt >/home/wanglei/fio_test/log/128b_seq_write_10job_QD1.log
+

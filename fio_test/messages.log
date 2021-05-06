@@ -1,0 +1,2 @@
+Wed Mar 10 13:13:41 2021 warning first error and sencond try block_size: 128b, job: 10, QD: 1, iotype: read
+Wed Mar 10 13:19:44 2021 error this case run error pls chenk block_size: 128b, job: 10, QD: 1, iotype: write

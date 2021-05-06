@@ -1,0 +1,9 @@
+libpmem: (g=0): rw=read, bs=(R) 128KiB-128KiB, (W) 128KiB-128KiB, (T) 128KiB-128KiB, ioengine=libpmem, iodepth=1
+fio-3.20
+Starting 1 thread
+libpmem: Laying out IO file (1 file / 4096MiB)
+
+fio: terminating on signal 2
+
+
+Run status group 0 (all jobs):
