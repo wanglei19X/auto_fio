@@ -1,0 +1,27 @@
+{
+  "FIO_BASE": {
+      "global": "[global]",
+      "ioengine": "ioengine=libpmem",
+      "time_based": "time_based=1",
+      "runtime": "runtime=20s",
+      "group_reporting": "group_reporting=1",
+      "invalidate": "invalidate=1",
+      "direct": "direct=1",
+      "directory": "directory=/mnt/pmem0",
+      "size": "size=4g",
+      "thread": "thread=1",
+      "scramble_buffers": "scramble_buffers=1",
+      "sync": "sync=1",
+      "unlink": "unlink=1",
+      "stonewall": "stonewall",
+      "numa_cpu_nodes": "numa_cpu_nodes=0",
+      "numa_mem_policy": "numa_mem_policy=bind:0",
+      "cpus_allowed_policy": "cpus_allowed_policy=split"
+  },
+  "block_size": ["128b"],
+  "job": ["1", "10"],
+  "QD": ["1"],
+  "io_type": ["read", "write"]
+  
+}
+

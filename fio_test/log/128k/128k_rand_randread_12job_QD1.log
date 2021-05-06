@@ -1,0 +1,44 @@
+libpmem: (g=0): rw=randread, bs=(R) 128KiB-128KiB, (W) 128KiB-128KiB, (T) 128KiB-128KiB, ioengine=libpmem, iodepth=1
+...
+fio-3.20
+Starting 12 threads
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+
+libpmem: (groupid=0, jobs=12): err= 0: pid=41618: Fri Mar  5 04:28:21 2021
+  read: IOPS=358k, BW=43.7GiB/s (46.9GB/s)(12.8TiB/300001msec)
+    clat (usec): min=3, max=2460, avg=32.99, stdev= 1.67
+     lat (usec): min=3, max=2461, avg=33.01, stdev= 1.67
+    clat percentiles (nsec):
+     |  1.00th=[30848],  5.00th=[31360], 10.00th=[31616], 20.00th=[31872],
+     | 30.00th=[32128], 40.00th=[32384], 50.00th=[32640], 60.00th=[33024],
+     | 70.00th=[33536], 80.00th=[34048], 90.00th=[34560], 95.00th=[35584],
+     | 99.00th=[37120], 99.50th=[38144], 99.90th=[42240], 99.95th=[46336],
+     | 99.99th=[86528]
+   bw (  MiB/s): min=29565, max=44959, per=100.00%, avg=44825.88, stdev=52.14, samples=7176
+   iops        : min=236526, max=359672, avg=358607.00, stdev=417.10, samples=7176
+  lat (usec)   : 4=0.01%, 20=0.01%, 50=99.96%, 100=0.04%, 250=0.01%
+  lat (usec)   : 500=0.01%
+  lat (msec)   : 2=0.01%, 4=0.01%
+  cpu          : usr=99.84%, sys=0.01%, ctx=1029, majf=0, minf=24960
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=107399655,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=43.7GiB/s (46.9GB/s), 43.7GiB/s-43.7GiB/s (46.9GB/s-46.9GB/s), io=12.8TiB (14.1TB), run=300001-300001msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%

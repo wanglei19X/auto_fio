@@ -1,0 +1,38 @@
+libpmem: (g=0): rw=write, bs=(R) 128KiB-128KiB, (W) 128KiB-128KiB, (T) 128KiB-128KiB, ioengine=libpmem, iodepth=1
+...
+fio-3.20
+Starting 8 threads
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+
+libpmem: (groupid=0, jobs=8): err= 0: pid=39867: Fri Mar  5 02:29:02 2021
+  write: IOPS=60.1k, BW=7517MiB/s (7882MB/s)(2202GiB/300001msec); 0 zone resets
+    clat (usec): min=53, max=824, avg=130.90, stdev=14.48
+     lat (usec): min=55, max=824, avg=131.56, stdev=14.48
+    clat percentiles (usec):
+     |  1.00th=[  106],  5.00th=[  112], 10.00th=[  115], 20.00th=[  120],
+     | 30.00th=[  123], 40.00th=[  126], 50.00th=[  129], 60.00th=[  133],
+     | 70.00th=[  137], 80.00th=[  143], 90.00th=[  151], 95.00th=[  159],
+     | 99.00th=[  174], 99.50th=[  180], 99.90th=[  194], 99.95th=[  200],
+     | 99.99th=[  215]
+   bw (  MiB/s): min= 7168, max= 7637, per=100.00%, avg=7525.33, stdev= 7.75, samples=4792
+   iops        : min=57344, max=61098, avg=60202.63, stdev=61.98, samples=4792
+  lat (usec)   : 100=0.04%, 250=99.96%, 500=0.01%, 1000=0.01%
+  cpu          : usr=99.91%, sys=0.01%, ctx=707, majf=0, minf=16385
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,18039734,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=7517MiB/s (7882MB/s), 7517MiB/s-7517MiB/s (7882MB/s-7882MB/s), io=2202GiB (2365GB), run=300001-300001msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%

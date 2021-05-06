@@ -1,0 +1,44 @@
+libpmem: (g=0): rw=write, bs=(R) 128B-128B, (W) 128B-128B, (T) 128B-128B, ioengine=libpmem, iodepth=1
+...
+fio-3.20
+Starting 10 threads
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+libpmem: Laying out IO file (1 file / 4096MiB)
+
+libpmem: (groupid=0, jobs=10): err= 0: pid=304072: Wed Mar 10 14:25:17 2021
+  write: IOPS=11.1M, BW=1357MiB/s (1423MB/s)(26.5GiB/20002msec); 0 zone resets
+    clat (nsec): min=41, max=7030.6k, avg=51.46, stdev=547.28
+     lat (nsec): min=64, max=7030.6k, avg=75.93, stdev=547.79
+    clat percentiles (nsec):
+     |  1.00th=[   45],  5.00th=[   46], 10.00th=[   46], 20.00th=[   47],
+     | 30.00th=[   47], 40.00th=[   47], 50.00th=[   48], 60.00th=[   48],
+     | 70.00th=[   48], 80.00th=[   49], 90.00th=[   49], 95.00th=[   50],
+     | 99.00th=[   52], 99.50th=[   55], 99.90th=[  612], 99.95th=[ 1048],
+     | 99.99th=[ 3088]
+   bw (  MiB/s): min= 1342, max= 1401, per=100.00%, avg=1358.54, stdev= 0.82, samples=390
+   iops        : min=10995932, max=11480723, avg=11129211.85, stdev=6720.56, samples=390
+  lat (nsec)   : 50=90.55%, 100=9.28%, 250=0.02%, 500=0.03%, 750=0.04%
+  lat (nsec)   : 1000=0.03%
+  lat (usec)   : 2=0.04%, 4=0.01%, 10=0.01%, 20=0.01%, 50=0.01%
+  lat (usec)   : 100=0.01%, 250=0.01%, 500=0.01%
+  lat (msec)   : 10=0.01%
+  cpu          : usr=99.53%, sys=0.22%, ctx=322, majf=0, minf=13590
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,222360252,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=1357MiB/s (1423MB/s), 1357MiB/s-1357MiB/s (1423MB/s-1423MB/s), io=26.5GiB (28.5GB), run=20002-20002msec
+
+Disk stats (read/write):
+  pmem0: ios=0/0, merge=0/0, ticks=0/0, in_queue=0, util=0.00%
